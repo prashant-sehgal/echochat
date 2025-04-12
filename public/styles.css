@@ -1,0 +1,40 @@
+.join-form {
+  width: 25rem;
+}
+
+.chatbox {
+  width: 95%;
+  max-width: 40rem;
+}
+
+#status {
+  font-size: 0.7rem;
+  background: var(--bs-light);
+}
+
+.messages-container {
+  height: calc(100vh - 8rem);
+}
+
+.message {
+  width: 60%;
+  display: flex;
+  gap: 0.5rem;
+  background: var(--bs-light);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.message.info {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.message.sent {
+  margin-left: auto;
+  margin-right: 0;
+  background: var(--bs-primary);
+  color: #fff;
+}

@@ -1,0 +1,28 @@
+<!-- Chat container centered with margin and vertical spacing -->
+<div class="chatbox m-auto mt-2 d-flex flex-column gap-1">
+  <!-- Message display area wrapped in a card -->
+  <div class="messages-container card overflow-hidden">
+    <!-- Status message showing connection info -->
+    <p id="status" class="p-1"><b>Status: </b>Connecting...</p>
+
+    <!-- Dynamic message list (populated via JavaScript) -->
+    <div class="card-body overflow-y-auto" id="messages"></div>
+  </div>
+
+  <!-- Message input form -->
+  <form class="d-flex gap-1" id="message-form">
+    <!-- Text input for the message -->
+    <input
+      type="text"
+      class="form-control flex-grow-1"
+      id="message-input"
+      placeholder="Message"
+      required
+    />
+
+    <!-- Submit button with a send icon -->
+    <button type="submit" class="btn btn-success">
+      <img src="/send-plane-fill.svg" width="20" alt="SEND" />
+    </button>
+  </form>
+</div>

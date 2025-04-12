@@ -1,0 +1,27 @@
+<!-- Join form container centered with spacing -->
+<div class="join-form d-flex flex-column gap-3 m-auto mt-4">
+  <!-- Heading and subheading for the landing page -->
+  <div>
+    <legend>Conversations for Everyone</legend>
+    <h6>Connect with friends, family, and colleagues instantly!</h6>
+  </div>
+
+  <!-- Form to join the chat, submits username as a query parameter -->
+  <form action="/chat" method="GET">
+    <!-- Username input field -->
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        name="username"
+        aria-describedby="emailHelp"
+        placeholder="Enter your username"
+        required
+      />
+    </div>
+
+    <!-- Submit button to go to /chat with username -->
+    <button type="submit" class="btn btn-primary w-100">Join</button>
+  </form>
+</div>
